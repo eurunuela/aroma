@@ -16,7 +16,7 @@ def test_feature_time_series(mel_mix, mc, features_df):
 
     # Read features csv
     df = pd.read_csv(features_df)
-    assert np.allclose(df["max_RP_corr"].values[:5], max_RP_corr[:5])
+    assert np.allclose(df["max_RP_corr"].values, max_RP_corr)
 
 
 def test_feature_frequency(mel_FT_mix, features_df):
